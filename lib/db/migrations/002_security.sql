@@ -152,6 +152,10 @@ declare
   req_status text;
   tx_id int;
 begin
+  -- Checked before anything else so a forged row never reaches the credit debit.
+  if app_uid() is not null and new.pro_id is distinct from app_uid() then
+    raise exception 'permission denied: only the pro who owns the lead can quote' using errcode = '42501';
+  end if;
   select * into l from leads where id = new.lead_id;
   if l.id is null or l.pro_id <> new.pro_id then
     raise exception 'lead not found for this pro' using errcode = 'P0002';
