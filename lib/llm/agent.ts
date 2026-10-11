@@ -53,7 +53,7 @@ export class AgentError extends Error {
 
 const ENV_ALLOWLIST = ["PATH", "HOME", "USER", "LANG", "TMPDIR"] as const;
 
-export function childEnv(source: NodeJS.ProcessEnv = process.env): Record<string, string> {
+export function childEnv(source: Readonly<Record<string, string | undefined>> = process.env): Record<string, string> {
   const env: Record<string, string> = {};
   for (const key of ENV_ALLOWLIST) {
     const v = source[key];
