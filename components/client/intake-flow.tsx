@@ -334,7 +334,7 @@ function IntakeTrace({ result }: { result: IntakeResult }) {
         <Meta label="Path" value={pathText} />
         <Meta label="Model" value={result.model ?? "none"} />
         <Meta label={result.path === "replay" ? "Time (recorded live run)" : "Time"} value={`${(result.duration_ms / 1000).toFixed(1)} s`} />
-        <Meta label="Cost" value={result.cost_usd === null ? "none" : `$${Number(result.cost_usd).toFixed(4)} (estimate)`} />
+        <Meta label={result.path === "replay" ? "Cost (recorded live run)" : "Cost"} value={result.cost_usd === null ? "none" : `$${Number(result.cost_usd).toFixed(4)} (estimate)`} />
       </dl>
       {result.fallback_reason && <p className="rounded-md bg-amber-50 px-3 py-2 text-xs text-amber-800">{result.fallback_reason}</p>}
       <ol className="space-y-2">
