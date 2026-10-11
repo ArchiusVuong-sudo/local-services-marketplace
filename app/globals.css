@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --color-brand-50: #eefbf6;
+  --color-brand-100: #d5f4e7;
+  --color-brand-200: #aee8d3;
+  --color-brand-300: #78d5b9;
+  --color-brand-400: #41bb9a;
+  --color-brand-500: #1fa082;
+  --color-brand-600: #12816a;
+  --color-brand-700: #106757;
+  --color-brand-800: #105247;
+  --color-brand-900: #0e443b;
+  --color-canvas: #f6f6f3;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    @apply bg-canvas text-slate-900;
+  }
+  ::selection {
+    @apply bg-brand-200;
+  }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+.animate-pulse-dot {
+  animation: pulse-dot 1.2s ease-in-out infinite;
+}
