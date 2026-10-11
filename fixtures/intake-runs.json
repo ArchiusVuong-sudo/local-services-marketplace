@@ -1,0 +1,884 @@
+{
+  "recorded_with": {
+    "sdk": "0.3.296",
+    "model": "claude-sonnet-5-5"
+  },
+  "runs": [
+    {
+      "note": "Water heater leaking in the garage, 85016. Need it fixed this week, budget about $450",
+      "model": "claude-sonnet-5-5",
+      "duration_ms": 8982,
+      "cost_usd": 0.006472,
+      "turns": 2,
+      "tool_calls": [
+        {
+          "name": "search_categories",
+          "input": {
+            "query": "water heater leaking"
+          },
+          "output": [
+            {
+              "slug": "water-heater-repair",
+              "name": "Water heater repair",
+              "score": 5,
+              "matched": [
+                "water heater"
+              ],
+              "questions": [
+                {
+                  "id": "fuel",
+                  "text": "Gas or electric?",
+                  "options": [
+                    "Gas",
+                    "Electric",
+                    "Not sure"
+                  ]
+                },
+                {
+                  "id": "type",
+                  "text": "Tank or tankless?",
+                  "options": [
+                    "Tank",
+                    "Tankless",
+                    "Not sure"
+                  ]
+                },
+                {
+                  "id": "age",
+                  "text": "How old is the unit?",
+                  "options": [
+                    "Under 5 years",
+                    "5-10 years",
+                    "Over 10 years",
+                    "Not sure"
+                  ]
+                }
+              ]
+            },
+            {
+              "slug": "leak-repair",
+              "name": "Leak and pipe repair",
+              "score": 3,
+              "matched": [
+                "leaking"
+              ],
+              "questions": [
+                {
+                  "id": "where",
+                  "text": "Where is the leak?",
+                  "options": [
+                    "Kitchen",
+                    "Bathroom",
+                    "Wall or ceiling",
+                    "Outside",
+                    "Not sure"
+                  ]
+                },
+                {
+                  "id": "shutoff",
+                  "text": "Can you shut off the water to it?",
+                  "options": [
+                    "Yes",
+                    "No",
+                    "Not sure"
+                  ]
+                }
+              ]
+            }
+          ],
+          "ms": 0
+        }
+      ],
+      "output": {
+        "category_slug": "water-heater-repair",
+        "title": "Fix leaking water heater in garage",
+        "zip": "85016",
+        "timing": "this_week",
+        "budget_usd": 450,
+        "details": "The water heater in the garage is leaking and needs to be repaired this week.",
+        "answers": []
+      },
+      "recorded_at": "2026-10-11T03:03:19.132Z"
+    },
+    {
+      "note": "Our AC is blowing warm air and it's 108 outside. 85251, need someone today if possible. Up to $600.",
+      "model": "claude-sonnet-5-5",
+      "duration_ms": 5399,
+      "cost_usd": 0.0073082,
+      "turns": 2,
+      "tool_calls": [
+        {
+          "name": "search_categories",
+          "input": {
+            "query": "AC blowing warm air repair"
+          },
+          "output": [
+            {
+              "slug": "ac-repair",
+              "name": "AC repair",
+              "score": 7,
+              "matched": [
+                "ac",
+                "warm air"
+              ],
+              "questions": [
+                {
+                  "id": "symptom",
+                  "text": "What is it doing?",
+                  "options": [
+                    "Not cooling",
+                    "Not turning on",
+                    "Leaking water",
+                    "Strange noise"
+                  ]
+                },
+                {
+                  "id": "system",
+                  "text": "What kind of system?",
+                  "options": [
+                    "Central air",
+                    "Heat pump",
+                    "Mini split",
+                    "Not sure"
+                  ]
+                }
+              ]
+            }
+          ],
+          "ms": 0
+        }
+      ],
+      "output": {
+        "category_slug": "ac-repair",
+        "title": "AC blowing warm air repair",
+        "zip": "85251",
+        "timing": "asap",
+        "budget_usd": 600,
+        "details": "The AC is blowing warm air during extreme heat (108 outside). Homeowner needs a technician today if possible.",
+        "answers": [
+          {
+            "question_id": "symptom",
+            "answer": "Not cooling"
+          }
+        ]
+      },
+      "recorded_at": "2026-10-11T03:03:15.558Z"
+    },
+    {
+      "note": "Kitchen sink is clogged again and backing up into the other side. ZIP 85281. Around $200.",
+      "model": "claude-sonnet-5-5",
+      "duration_ms": 5340,
+      "cost_usd": 0.0074535999999999995,
+      "turns": 2,
+      "tool_calls": [
+        {
+          "name": "search_categories",
+          "input": {
+            "query": "clogged kitchen sink drain"
+          },
+          "output": [
+            {
+              "slug": "drain-cleaning",
+              "name": "Drain cleaning",
+              "score": 5,
+              "matched": [
+                "drain",
+                "clogged"
+              ],
+              "questions": [
+                {
+                  "id": "which",
+                  "text": "Which drain?",
+                  "options": [
+                    "Kitchen sink",
+                    "Shower or tub",
+                    "Toilet",
+                    "Main line"
+                  ]
+                },
+                {
+                  "id": "first_time",
+                  "text": "Has this happened before?",
+                  "options": [
+                    "First time",
+                    "It keeps coming back"
+                  ]
+                }
+              ]
+            }
+          ],
+          "ms": 1
+        }
+      ],
+      "output": {
+        "category_slug": "drain-cleaning",
+        "title": "Clogged kitchen sink drain",
+        "zip": "85281",
+        "timing": null,
+        "budget_usd": 200,
+        "details": "Kitchen sink is clogged again and backing up into the other side of the sink.",
+        "answers": [
+          {
+            "question_id": "which",
+            "answer": "Kitchen sink"
+          },
+          {
+            "question_id": "first_time",
+            "answer": "It keeps coming back"
+          }
+        ]
+      },
+      "recorded_at": "2026-10-11T03:03:15.500Z"
+    },
+    {
+      "note": "Looking for weekly pool cleaning, the water is turning green. We're in 85254, budget $150 a month.",
+      "model": "claude-sonnet-5-5",
+      "duration_ms": 5857,
+      "cost_usd": 0.0077168,
+      "turns": 2,
+      "tool_calls": [
+        {
+          "name": "search_categories",
+          "input": {
+            "query": "weekly pool cleaning green water"
+          },
+          "output": [
+            {
+              "slug": "house-cleaning",
+              "name": "House cleaning",
+              "score": 3,
+              "matched": [
+                "cleaning"
+              ],
+              "questions": [
+                {
+                  "id": "kind",
+                  "text": "What kind of clean?",
+                  "options": [
+                    "Standard clean",
+                    "Deep clean",
+                    "Move-in or move-out"
+                  ]
+                },
+                {
+                  "id": "bedrooms",
+                  "text": "How many bedrooms?",
+                  "options": [
+                    "1-2",
+                    "3",
+                    "4+"
+                  ]
+                }
+              ]
+            },
+            {
+              "slug": "pool-care",
+              "name": "Pool care",
+              "score": 2,
+              "matched": [
+                "pool"
+              ],
+              "questions": [
+                {
+                  "id": "service",
+                  "text": "What service do you need?",
+                  "options": [
+                    "Weekly cleaning",
+                    "One-time clean",
+                    "Pump or filter repair",
+                    "Green to clean"
+                  ]
+                },
+                {
+                  "id": "spa",
+                  "text": "Is there an attached spa?",
+                  "options": [
+                    "Yes",
+                    "No"
+                  ]
+                }
+              ]
+            }
+          ],
+          "ms": 0
+        }
+      ],
+      "output": {
+        "category_slug": "pool-care",
+        "title": "Weekly pool cleaning service",
+        "zip": "85254",
+        "timing": "flexible",
+        "budget_usd": 150,
+        "details": "Homeowner wants recurring weekly pool cleaning. The pool water is turning green.",
+        "answers": [
+          {
+            "question_id": "service",
+            "answer": "Weekly cleaning"
+          }
+        ]
+      },
+      "recorded_at": "2026-10-11T03:03:21.358Z"
+    },
+    {
+      "note": "Breaker keeps tripping when the microwave runs, and one outlet is warm. 85012, budget $300, this week.",
+      "model": "claude-sonnet-5-5",
+      "duration_ms": 5788,
+      "cost_usd": 0.0072539,
+      "turns": 2,
+      "tool_calls": [
+        {
+          "name": "search_categories",
+          "input": {
+            "query": "breaker tripping warm outlet"
+          },
+          "output": [
+            {
+              "slug": "electrical",
+              "name": "Electrical work",
+              "score": 5,
+              "matched": [
+                "outlet",
+                "breaker"
+              ],
+              "questions": [
+                {
+                  "id": "work",
+                  "text": "What kind of work?",
+                  "options": [
+                    "Repair",
+                    "New install",
+                    "Panel upgrade",
+                    "EV charger"
+                  ]
+                },
+                {
+                  "id": "power",
+                  "text": "Is any part of the house without power?",
+                  "options": [
+                    "Yes",
+                    "No"
+                  ]
+                }
+              ]
+            }
+          ],
+          "ms": 1
+        }
+      ],
+      "output": {
+        "category_slug": "electrical",
+        "title": "Breaker tripping and warm outlet",
+        "zip": "85012",
+        "timing": "this_week",
+        "budget_usd": 300,
+        "details": "Breaker trips whenever the microwave runs, and one outlet feels warm. Needs diagnosis and repair.",
+        "answers": [
+          {
+            "question_id": "work",
+            "answer": "Repair"
+          }
+        ]
+      },
+      "recorded_at": "2026-10-11T03:03:21.346Z"
+    },
+    {
+      "note": "Need a handyman to mount a TV, hang shelves and fix a sticking door. 85003. About $250, no rush.",
+      "model": "claude-sonnet-5-5",
+      "duration_ms": 5189,
+      "cost_usd": 0.0072753,
+      "turns": 2,
+      "tool_calls": [
+        {
+          "name": "search_categories",
+          "input": {
+            "query": "handyman mount TV hang shelves fix door"
+          },
+          "output": [
+            {
+              "slug": "handyman",
+              "name": "Handyman",
+              "score": 13,
+              "matched": [
+                "handyman",
+                "mount",
+                "tv",
+                "shelves",
+                "handyman"
+              ],
+              "questions": [
+                {
+                  "id": "tasks",
+                  "text": "How many tasks?",
+                  "options": [
+                    "One",
+                    "2-3",
+                    "A full list"
+                  ]
+                },
+                {
+                  "id": "materials",
+                  "text": "Do you have the materials?",
+                  "options": [
+                    "Yes",
+                    "No, the pro brings them"
+                  ]
+                }
+              ]
+            }
+          ],
+          "ms": 0
+        }
+      ],
+      "output": {
+        "category_slug": "handyman",
+        "title": "Mount TV, hang shelves, fix door",
+        "zip": "85003",
+        "timing": "flexible",
+        "budget_usd": 250,
+        "details": "Need a handyman to mount a TV, hang shelves, and fix a sticking door.",
+        "answers": [
+          {
+            "question_id": "tasks",
+            "answer": "2-3"
+          }
+        ]
+      },
+      "recorded_at": "2026-10-11T03:03:24.321Z"
+    },
+    {
+      "note": "Move-out deep clean for a 3 bedroom house in 85283 by next Friday, budget $350.",
+      "model": "claude-sonnet-5-5",
+      "duration_ms": 6796,
+      "cost_usd": 0.0081433,
+      "turns": 2,
+      "tool_calls": [
+        {
+          "name": "search_categories",
+          "input": {
+            "query": "move-out deep cleaning house"
+          },
+          "output": [
+            {
+              "slug": "house-cleaning",
+              "name": "House cleaning",
+              "score": 6,
+              "matched": [
+                "cleaning",
+                "move-out"
+              ],
+              "questions": [
+                {
+                  "id": "kind",
+                  "text": "What kind of clean?",
+                  "options": [
+                    "Standard clean",
+                    "Deep clean",
+                    "Move-in or move-out"
+                  ]
+                },
+                {
+                  "id": "bedrooms",
+                  "text": "How many bedrooms?",
+                  "options": [
+                    "1-2",
+                    "3",
+                    "4+"
+                  ]
+                }
+              ]
+            }
+          ],
+          "ms": 0
+        }
+      ],
+      "output": {
+        "category_slug": "house-cleaning",
+        "title": "Move-out deep clean, 3 bedroom",
+        "zip": "85283",
+        "timing": "next_two_weeks",
+        "budget_usd": 350,
+        "details": "Move-out deep clean for a 3 bedroom house, needed by next Friday.",
+        "answers": [
+          {
+            "question_id": "kind",
+            "answer": "Move-in or move-out"
+          },
+          {
+            "question_id": "bedrooms",
+            "answer": "3"
+          }
+        ]
+      },
+      "recorded_at": "2026-10-11T03:03:28.142Z"
+    },
+    {
+      "note": "Sprinkler line broke and the front yard is flooding, also need the hedges trimmed. 85020, $400.",
+      "model": "claude-sonnet-5-5",
+      "duration_ms": 5650,
+      "cost_usd": 0.0084101,
+      "turns": 3,
+      "tool_calls": [
+        {
+          "name": "search_categories",
+          "input": {
+            "query": "sprinkler line broken flooding"
+          },
+          "output": [
+            {
+              "slug": "landscaping",
+              "name": "Landscaping and yard care",
+              "score": 3,
+              "matched": [
+                "sprinkler"
+              ],
+              "questions": [
+                {
+                  "id": "service",
+                  "text": "What does the yard need?",
+                  "options": [
+                    "Regular maintenance",
+                    "One-time cleanup",
+                    "Irrigation repair",
+                    "Tree trimming"
+                  ]
+                },
+                {
+                  "id": "size",
+                  "text": "How big is the yard?",
+                  "options": [
+                    "Small",
+                    "Medium",
+                    "Large"
+                  ]
+                }
+              ]
+            }
+          ],
+          "ms": 0
+        },
+        {
+          "name": "search_categories",
+          "input": {
+            "query": "hedge trimming"
+          },
+          "output": [],
+          "ms": 0
+        }
+      ],
+      "output": {
+        "category_slug": "landscaping",
+        "title": "Sprinkler line repair and hedge trimming",
+        "zip": "85020",
+        "timing": "asap",
+        "budget_usd": 400,
+        "details": "A broken sprinkler line is flooding the front yard and needs repair. The hedges also need trimming.",
+        "answers": [
+          {
+            "question_id": "service",
+            "answer": "Irrigation repair"
+          }
+        ]
+      },
+      "recorded_at": "2026-10-11T03:03:27.010Z"
+    },
+    {
+      "note": "Monsoon storm cracked some roof tiles and now there's a stain on the ceiling. 85018. Budget around $800.",
+      "model": "claude-sonnet-5-5",
+      "duration_ms": 5637,
+      "cost_usd": 0.008297800000000001,
+      "turns": 2,
+      "tool_calls": [
+        {
+          "name": "search_categories",
+          "input": {
+            "query": "roof tiles cracked leak ceiling stain"
+          },
+          "output": [
+            {
+              "slug": "roofing",
+              "name": "Roof repair",
+              "score": 12,
+              "matched": [
+                "roof",
+                "roof tiles",
+                "ceiling stain"
+              ],
+              "questions": [
+                {
+                  "id": "roof_type",
+                  "text": "What kind of roof?",
+                  "options": [
+                    "Tile",
+                    "Shingle",
+                    "Flat or foam",
+                    "Not sure"
+                  ]
+                },
+                {
+                  "id": "problem",
+                  "text": "What is the problem?",
+                  "options": [
+                    "Leak",
+                    "Storm damage",
+                    "Inspection",
+                    "Replacement"
+                  ]
+                }
+              ]
+            },
+            {
+              "slug": "leak-repair",
+              "name": "Leak and pipe repair",
+              "score": 2,
+              "matched": [
+                "leak"
+              ],
+              "questions": [
+                {
+                  "id": "where",
+                  "text": "Where is the leak?",
+                  "options": [
+                    "Kitchen",
+                    "Bathroom",
+                    "Wall or ceiling",
+                    "Outside",
+                    "Not sure"
+                  ]
+                },
+                {
+                  "id": "shutoff",
+                  "text": "Can you shut off the water to it?",
+                  "options": [
+                    "Yes",
+                    "No",
+                    "Not sure"
+                  ]
+                }
+              ]
+            }
+          ],
+          "ms": 0
+        }
+      ],
+      "output": {
+        "category_slug": "roofing",
+        "title": "Repair storm-cracked roof tiles",
+        "zip": "85018",
+        "timing": null,
+        "budget_usd": 800,
+        "details": "A monsoon storm cracked some roof tiles, and there is now a stain on the ceiling. Needs roof repair and likely leak attention.",
+        "answers": [
+          {
+            "question_id": "roof_type",
+            "answer": "Tile"
+          },
+          {
+            "question_id": "problem",
+            "answer": "Storm damage"
+          }
+        ]
+      },
+      "recorded_at": "2026-10-11T03:03:29.958Z"
+    },
+    {
+      "note": "Want the living room and two bedrooms repainted, walls only. 85014, thinking around twelve hundred dollars.",
+      "model": "claude-sonnet-5-5",
+      "duration_ms": 5115,
+      "cost_usd": 0.007285600000000001,
+      "turns": 2,
+      "tool_calls": [
+        {
+          "name": "search_categories",
+          "input": {
+            "query": "interior painting walls"
+          },
+          "output": [
+            {
+              "slug": "painting",
+              "name": "Painting",
+              "score": 8,
+              "matched": [
+                "painting",
+                "walls",
+                "painting"
+              ],
+              "questions": [
+                {
+                  "id": "area",
+                  "text": "Inside or outside?",
+                  "options": [
+                    "Interior",
+                    "Exterior",
+                    "Cabinets"
+                  ]
+                },
+                {
+                  "id": "rooms",
+                  "text": "How many rooms?",
+                  "options": [
+                    "1",
+                    "2-3",
+                    "4+"
+                  ]
+                }
+              ]
+            }
+          ],
+          "ms": 0
+        }
+      ],
+      "output": {
+        "category_slug": "painting",
+        "title": "Repaint living room and two bedrooms",
+        "zip": "85014",
+        "timing": null,
+        "budget_usd": 1200,
+        "details": "Repaint the walls only in the living room and two bedrooms.",
+        "answers": [
+          {
+            "question_id": "area",
+            "answer": "Interior"
+          },
+          {
+            "question_id": "rooms",
+            "answer": "2-3"
+          }
+        ]
+      },
+      "recorded_at": "2026-10-11T03:03:32.125Z"
+    },
+    {
+      "note": "Seeing scorpions in the garage and the kids' room, want a recurring treatment. 85032, budget $120.",
+      "model": "claude-sonnet-5-5",
+      "duration_ms": 5413,
+      "cost_usd": 0.0075295,
+      "turns": 2,
+      "tool_calls": [
+        {
+          "name": "search_categories",
+          "input": {
+            "query": "scorpion pest control recurring"
+          },
+          "output": [
+            {
+              "slug": "pest-control",
+              "name": "Pest control",
+              "score": 10,
+              "matched": [
+                "pest",
+                "scorpion",
+                "pest control"
+              ],
+              "questions": [
+                {
+                  "id": "pest",
+                  "text": "Which pest?",
+                  "options": [
+                    "Scorpions",
+                    "Ants or roaches",
+                    "Termites",
+                    "Rodents",
+                    "Bees",
+                    "Other"
+                  ]
+                },
+                {
+                  "id": "plan",
+                  "text": "One-time or recurring?",
+                  "options": [
+                    "One-time",
+                    "Recurring"
+                  ]
+                }
+              ]
+            }
+          ],
+          "ms": 1
+        }
+      ],
+      "output": {
+        "category_slug": "pest-control",
+        "title": "Recurring scorpion treatment for home",
+        "zip": "85032",
+        "timing": "flexible",
+        "budget_usd": 120,
+        "details": "Scorpions have been seen in the garage and the kids' room. Homeowner wants a recurring pest treatment.",
+        "answers": [
+          {
+            "question_id": "pest",
+            "answer": "Scorpions"
+          },
+          {
+            "question_id": "plan",
+            "answer": "Recurring"
+          }
+        ]
+      },
+      "recorded_at": "2026-10-11T03:03:33.555Z"
+    },
+    {
+      "note": "Toilet base is leaking onto the bathroom floor. 85015. Can pay $180.",
+      "model": "claude-sonnet-5-5",
+      "duration_ms": 5223,
+      "cost_usd": 0.0071332,
+      "turns": 2,
+      "tool_calls": [
+        {
+          "name": "search_categories",
+          "input": {
+            "query": "toilet leaking at base"
+          },
+          "output": [
+            {
+              "slug": "leak-repair",
+              "name": "Leak and pipe repair",
+              "score": 5,
+              "matched": [
+                "leaking",
+                "toilet"
+              ],
+              "questions": [
+                {
+                  "id": "where",
+                  "text": "Where is the leak?",
+                  "options": [
+                    "Kitchen",
+                    "Bathroom",
+                    "Wall or ceiling",
+                    "Outside",
+                    "Not sure"
+                  ]
+                },
+                {
+                  "id": "shutoff",
+                  "text": "Can you shut off the water to it?",
+                  "options": [
+                    "Yes",
+                    "No",
+                    "Not sure"
+                  ]
+                }
+              ]
+            }
+          ],
+          "ms": 0
+        }
+      ],
+      "output": {
+        "category_slug": "leak-repair",
+        "title": "Leaking toilet base repair",
+        "zip": "85015",
+        "timing": null,
+        "budget_usd": 180,
+        "details": "Water is leaking from the base of the toilet onto the bathroom floor.",
+        "answers": [
+          {
+            "question_id": "where",
+            "answer": "Bathroom"
+          }
+        ]
+      },
+      "recorded_at": "2026-10-11T03:03:35.181Z"
+    }
+  ]
+}
