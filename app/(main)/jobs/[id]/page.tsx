@@ -113,7 +113,8 @@ export default async function JobPage({ params }: { params: Promise<{ id: string
                       <span className="text-xs text-slate-400">{formatDateTime(e.created_at)}</span>
                     </div>
                     <p className="text-sm text-slate-500">
-                      {e.kind === "scheduled" && job.scheduled_for ? `Visit set for ${formatDateTime(job.scheduled_for)}` : e.note} <span className="text-slate-400">· {e.actor}</span>
+                      {[e.kind === "scheduled" && job.scheduled_for ? `Visit set for ${formatDateTime(job.scheduled_for)}` : e.note].filter(Boolean).join("")}
+                      <span className="text-slate-400">{e.note || e.kind === "scheduled" ? " · " : ""}{e.actor}</span>
                     </p>
                   </li>
                 ))}
