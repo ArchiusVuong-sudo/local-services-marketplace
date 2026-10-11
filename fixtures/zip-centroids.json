@@ -1,0 +1,196 @@
+{
+  "source": "api.zippopotam.us",
+  "recorded_at": "2026-10-11",
+  "note": "Recorded once by scripts/record-zips.ts. Public ZIP centroids, no personal data.",
+  "zips": [
+    {
+      "zip": "85003",
+      "place": "Phoenix",
+      "state": "AZ",
+      "lat": 33.4511,
+      "lng": -112.0774
+    },
+    {
+      "zip": "85004",
+      "place": "Phoenix",
+      "state": "AZ",
+      "lat": 33.4557,
+      "lng": -112.0686
+    },
+    {
+      "zip": "85006",
+      "place": "Phoenix",
+      "state": "AZ",
+      "lat": 33.465,
+      "lng": -112.0474
+    },
+    {
+      "zip": "85008",
+      "place": "Phoenix",
+      "state": "AZ",
+      "lat": 33.4665,
+      "lng": -111.9984
+    },
+    {
+      "zip": "85012",
+      "place": "Phoenix",
+      "state": "AZ",
+      "lat": 33.5097,
+      "lng": -112.0678
+    },
+    {
+      "zip": "85013",
+      "place": "Phoenix",
+      "state": "AZ",
+      "lat": 33.5085,
+      "lng": -112.0827
+    },
+    {
+      "zip": "85014",
+      "place": "Phoenix",
+      "state": "AZ",
+      "lat": 33.5103,
+      "lng": -112.0556
+    },
+    {
+      "zip": "85015",
+      "place": "Phoenix",
+      "state": "AZ",
+      "lat": 33.5082,
+      "lng": -112.1011
+    },
+    {
+      "zip": "85016",
+      "place": "Phoenix",
+      "state": "AZ",
+      "lat": 33.5021,
+      "lng": -112.0305
+    },
+    {
+      "zip": "85018",
+      "place": "Phoenix",
+      "state": "AZ",
+      "lat": 33.4958,
+      "lng": -111.9883
+    },
+    {
+      "zip": "85020",
+      "place": "Phoenix",
+      "state": "AZ",
+      "lat": 33.5623,
+      "lng": -112.0559
+    },
+    {
+      "zip": "85021",
+      "place": "Phoenix",
+      "state": "AZ",
+      "lat": 33.56,
+      "lng": -112.0927
+    },
+    {
+      "zip": "85022",
+      "place": "Phoenix",
+      "state": "AZ",
+      "lat": 33.6315,
+      "lng": -112.052
+    },
+    {
+      "zip": "85028",
+      "place": "Phoenix",
+      "state": "AZ",
+      "lat": 33.5851,
+      "lng": -112.0087
+    },
+    {
+      "zip": "85032",
+      "place": "Phoenix",
+      "state": "AZ",
+      "lat": 33.6238,
+      "lng": -112.0044
+    },
+    {
+      "zip": "85251",
+      "place": "Scottsdale",
+      "state": "AZ",
+      "lat": 33.4936,
+      "lng": -111.9167
+    },
+    {
+      "zip": "85253",
+      "place": "Paradise Valley",
+      "state": "AZ",
+      "lat": 33.5494,
+      "lng": -111.9565
+    },
+    {
+      "zip": "85254",
+      "place": "Scottsdale",
+      "state": "AZ",
+      "lat": 33.6165,
+      "lng": -111.9554
+    },
+    {
+      "zip": "85257",
+      "place": "Scottsdale",
+      "state": "AZ",
+      "lat": 33.4669,
+      "lng": -111.9151
+    },
+    {
+      "zip": "85281",
+      "place": "Tempe",
+      "state": "AZ",
+      "lat": 33.4227,
+      "lng": -111.9261
+    },
+    {
+      "zip": "85282",
+      "place": "Tempe",
+      "state": "AZ",
+      "lat": 33.3917,
+      "lng": -111.9249
+    },
+    {
+      "zip": "85283",
+      "place": "Tempe",
+      "state": "AZ",
+      "lat": 33.3665,
+      "lng": -111.9312
+    },
+    {
+      "zip": "85201",
+      "place": "Mesa",
+      "state": "AZ",
+      "lat": 33.4317,
+      "lng": -111.8469
+    },
+    {
+      "zip": "85203",
+      "place": "Mesa",
+      "state": "AZ",
+      "lat": 33.437,
+      "lng": -111.8057
+    },
+    {
+      "zip": "85210",
+      "place": "Mesa",
+      "state": "AZ",
+      "lat": 33.3887,
+      "lng": -111.8428
+    },
+    {
+      "zip": "85301",
+      "place": "Glendale",
+      "state": "AZ",
+      "lat": 33.5311,
+      "lng": -112.1767
+    },
+    {
+      "zip": "85302",
+      "place": "Glendale",
+      "state": "AZ",
+      "lat": 33.5675,
+      "lng": -112.1753
+    }
+  ]
+}
