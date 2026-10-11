@@ -8,7 +8,7 @@ export function Logo() {
           <path d="M10 19v-5h4v5" />
         </svg>
       </span>
-      <span className="text-[17px] font-semibold tracking-tight text-slate-900">Tradeloop</span>
+      <span className="text-[17px] font-semibold tracking-tight text-slate-900">Local services</span>
     </span>
   );
 }

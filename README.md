@@ -1,4 +1,4 @@
-# Tradeloop
+# Local services marketplace
 
 A working slice of a two-sided local services marketplace: a client describes a job in one sentence, the best-fit local pros get it and quote, the client hires, pays and reviews, and the team sees it all on an admin dashboard.
 
@@ -73,7 +73,7 @@ erDiagram
 
 ## How it works
 
-**Data and access.** Postgres runs in-process through PGlite (Postgres compiled to WASM, no Docker). Plain SQL migrations create 16 tables and row-level security policies. Every app request runs in one short transaction as the non-superuser role `app_user` with `app.user_id` set, so the database decides what each person can read or write: clients see their own requests, pros only the leads sent to them, contact details open only to the other side of a hired job, quotes can only be written by the lead's pro, and reviews only by the client of a done job, once. The unmasked quote message is a column the app role cannot select; a security-definer function returns it only to the pro and, after hire, the client. The UI's "Viewing as" switcher stands in for sign-in.
+**Data and access.** Postgres runs in-process through PGlite (Postgres compiled to WASM, no Docker). Plain SQL migrations create 16 tables and row-level security policies. Every app request runs in one short transaction as the non-superuser role `app_user` with `app.user_id` set, so the database decides what each person can read or write: clients see their own requests, pros only the leads sent to them, contact details open only to the other side of a hired job, quotes can only be written by the lead's pro, and reviews only by the client of a done job, once. The unmasked quote message is a column the app role cannot select; a security-definer function returns it only to the pro, an admin and, after hire, the client. The UI's "Viewing as" switcher stands in for sign-in.
 
 **Money.** All amounts are integer cents. Each money movement is a double-entry ledger transaction: credit purchase, lead fee, payment hold, payout release. Quoting spends the lead fee inside a database trigger, in the same transaction as the quote, so credits and the ledger cannot drift. A deferred constraint trigger refuses any transaction whose lines do not sum to zero at commit. Job status moves one step at a time, checked in code and again by a trigger.
 

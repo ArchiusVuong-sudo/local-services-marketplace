@@ -48,7 +48,7 @@ create function job_reviewable(job int, pro text) returns boolean language sql s
   )
 $$;
 
--- The pro's own message, unmasked, for the pro and for the client once hired; masked text otherwise.
+-- The pro's own message, unmasked, for the pro, an admin and the client once hired; masked text otherwise.
 create function quote_message(q int) returns text language sql stable security definer set search_path = public as $$
   select case
     when qt.pro_id = app_uid() or app_is_admin()

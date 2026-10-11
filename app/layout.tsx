@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Tradeloop - local services marketplace (demo)",
+  title: "Local services marketplace (demo)",
   description: "Describe a job, get matched with local pros, compare quotes, hire, pay and review. Synthetic demo data.",
 };
 
